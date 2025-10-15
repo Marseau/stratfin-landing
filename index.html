@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="StratFin - Plataforma SaaS para empresas de agentes autônomos com gestão empresarial dinâmica, governança 360° e operação em tempo real.">
+    <title>StratFin | Plataforma inteligente para empresas de agentes autônomos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f3f9f3',
+                            100: '#d9f0df',
+                            200: '#b5e0c2',
+                            300: '#8acfa2',
+                            400: '#5fac7a',
+                            500: '#478b5d',
+                            600: '#34704a',
+                            700: '#28583a',
+                            800: '#1d3f29',
+                            900: '#142b1c'
+                        },
+                        night: '#0b132b'
+                    },
+                    boxShadow: {
+                        glow: '0 10px 40px rgba(71, 139, 93, 0.25)'
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                        display: ['Roboto', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="bg-night text-slate-100 font-sans antialiased selection:bg-brand-400 selection:text-night">
+<div class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(110,196,125,0.25),transparent_55%)] pointer-events-none"></div>
+
+    <header class="sticky top-0 z-40 bg-night/80 backdrop-blur border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="Logo completo sem fundo.png" alt="StratFin" class="h-24 w-auto drop-shadow-lg">
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm text-slate-200">
+                <a href="#sobre" class="hover:text-brand-200 transition-colors">Sobre</a>
+                <a href="#beneficios" class="hover:text-brand-200 transition-colors">Benefícios</a>
+                <a href="#automacao" class="hover:text-brand-200 transition-colors">Automação Inteligente</a>
+                <a href="#seguranca" class="hover:text-brand-200 transition-colors">Segurança & Compliance</a>
+                <a href="#contato" class="hover:text-brand-200 transition-colors">Fale com especialistas</a>
+            </nav>
+            <a href="#contato" class="inline-flex items-center gap-2 rounded-full bg-brand-500 px-6 py-2.5 text-sm font-semibold text-white shadow-glow transition hover:bg-brand-400">
+                <span>Quero conhecer</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative pt-24 pb-32" id="hero">
+            <div class="absolute inset-x-0 top-0 h-80 bg-gradient-to-br from-brand-600/20 via-night to-night pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center relative">
+                <div>
+                    <span class="inline-flex items-center gap-2 rounded-full border border-brand-400/40 bg-brand-500/10 px-4 py-1 text-sm text-brand-100">
+                        <span class="inline-block h-2 w-2 rounded-full bg-brand-300"></span>
+                        SaaS especializado para gestão empresarial de agentes autônomos
+                    </span>
+                    <h1 class="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-tight">
+                        Orquestre advisors, clientes e carteiras em uma única plataforma profissional.
+                    </h1>
+                    <p class="mt-6 text-lg text-slate-200 max-w-2xl">
+                        A StratFin centraliza metas comerciais, atendimento, monitoramento de carteira e compliance em tempo real,
+                        com fluxos automatizados que mantêm toda a operação sincronizada e rentável.
+                    </p>
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                        <a href="#contato" class="inline-flex items-center justify-center rounded-full bg-brand-500 px-8 py-3 text-base font-semibold text-white shadow-glow hover:bg-brand-400 transition">
+                            Solicitar demonstração guiada
+                        </a>
+                        <a href="docs/Plataforma completa para empresas de agentes autônomos com automação inteligente.pdf" class="inline-flex items-center justify-center rounded-full border border-white/20 px-8 py-3 text-base font-semibold text-white hover:border-white/40 transition" target="_blank" rel="noopener">
+                            Baixar visão completa da plataforma
+                        </a>
+                    </div>
+                    <div class="mt-12 grid gap-3 text-sm text-slate-200">
+                        <div class="flex items-start gap-3">
+                            <span class="mt-1 h-2.5 w-2.5 rounded-full bg-brand-400"></span>
+                            <p>Base preparada para escalar de escritórios boutique a operações nacionais com múltiplas mesas.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="mt-1 h-2.5 w-2.5 rounded-full bg-brand-400"></span>
+                            <p>Centralização de informações comerciais, financeiras e de governança em uma mesma plataforma.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="mt-1 h-2.5 w-2.5 rounded-full bg-brand-400"></span>
+                            <p>Automação de onboarding, supervisão e relacionamento com investidores de forma segura.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-6 bg-brand-500/10 blur-3xl rounded-full"></div>
+                    <div class="relative rounded-3xl border border-white/5 bg-white/5 p-8 backdrop-blur-lg shadow-2xl">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs uppercase tracking-[0.2em] text-brand-100">Painel operacional</span>
+                            <span class="rounded-full bg-brand-500/30 px-3 py-1 text-xs text-brand-50">Automação ativa</span>
+                        </div>
+                        <p class="mt-6 text-base text-slate-100 leading-relaxed">
+                            Visualize performance de carteiras, indicadores macroeconômicos e funis comerciais em tempo real.
+                            Gere relatórios em PDF ou CSV com poucos cliques e mantenha tudo auditável para decisões rápidas.
+                        </p>
+                        <div class="mt-6 grid grid-cols-2 gap-4">
+                            <div class="rounded-2xl border border-white/10 bg-night/60 p-4">
+                                <p class="text-xs uppercase text-brand-200">Compliance</p>
+                                <p class="mt-2 text-lg font-semibold text-white">Checklist de conformidade</p>
+                                <p class="mt-1 text-sm text-slate-300">Auditoria em tempo real com trilha de evidências e registros por advisor.</p>
+                            </div>
+                            <div class="rounded-2xl border border-white/10 bg-night/60 p-4">
+                                <p class="text-xs uppercase text-brand-200">Carteiras</p>
+                                <p class="mt-2 text-lg font-semibold text-white">Posição consolidada</p>
+                                <p class="mt-1 text-sm text-slate-300">Distribuições por produto e advisor atualizadas com dados importados automaticamente.</p>
+                            </div>
+                            <div class="rounded-2xl border border-white/10 bg-night/60 p-4">
+                                <p class="text-xs uppercase text-brand-200">Operações</p>
+                                <p class="mt-2 text-lg font-semibold text-white">Fluxos monitorados</p>
+                                <p class="mt-1 text-sm text-slate-300">Onboarding, supervisão e performance com status em tempo real.</p>
+                            </div>
+                            <div class="rounded-2xl border border-white/10 bg-night/60 p-4">
+                                <p class="text-xs uppercase text-brand-200">Analytics</p>
+                                <p class="mt-2 text-lg font-semibold text-white">Insights acionáveis</p>
+                                <p class="mt-1 text-sm text-slate-300">Dashboards prontos e customizáveis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="py-24">
+            <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
+                <div class="space-y-6">
+                    <h2 class="font-display text-3xl sm:text-4xl text-white">Por que a StratFin é diferente?</h2>
+                    <p class="text-lg text-slate-200">
+                        Criada especialmente para empresas de agentes autônomos, a StratFin unifica CRM, gestão de carteiras,
+                        inteligência comercial e compliance em um modelo SaaS seguro e escalável. Sem depender de
+                        planilhas, integrações caseiras ou processos manuais.
+                    </p>
+                    <p class="text-lg text-slate-200">
+                        A plataforma garante governança para múltiplas mesas e escritórios, com papéis flexíveis,
+                        cadastros únicos, auditoria ponta a ponta e automações que eliminam retrabalho operacional.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="rounded-full bg-white/5 border border-white/10 px-5 py-1.5 text-sm text-slate-100">Multiempresa e RBAC</span>
+                        <span class="rounded-full bg-white/5 border border-white/10 px-5 py-1.5 text-sm text-slate-100">Dashboards em tempo real</span>
+                        <span class="rounded-full bg-white/5 border border-white/10 px-5 py-1.5 text-sm text-slate-100">Convites automatizados</span>
+                        <span class="rounded-full bg-white/5 border border-white/10 px-5 py-1.5 text-sm text-slate-100">Relatórios PDF e CSV</span>
+                    </div>
+                </div>
+                <div class="grid gap-8">
+                    <div class="rounded-3xl border border-white/5 bg-white/5 backdrop-blur p-8">
+                        <div class="flex items-center gap-3">
+                            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-brand-500/30 text-brand-100">01</div>
+                            <h3 class="text-xl font-semibold text-white">Operação conectada fim-a-fim</h3>
+                        </div>
+                        <p class="mt-3 text-sm text-slate-200">Cadastro completo de advisors e clientes, onboarding digital, acompanhamento comercial e relatórios executivos em um único painel.</p>
+                    </div>
+                    <div class="rounded-3xl border border-white/5 bg-white/5 backdrop-blur p-8">
+                        <div class="flex items-center gap-3">
+                            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-brand-500/30 text-brand-100">02</div>
+                            <h3 class="text-xl font-semibold text-white">Automação com inteligência contextual</h3>
+                        </div>
+                        <p class="mt-3 text-sm text-slate-200">Workflows prontos para convites, reenvios automáticos, atualização de indicadores e lembretes operacionais.</p>
+                    </div>
+                    <div class="rounded-3xl border border-white/5 bg-white/5 backdrop-blur p-8">
+                        <div class="flex items-center gap-3">
+                            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-brand-500/30 text-brand-100">03</div>
+                            <h3 class="text-xl font-semibold text-white">Ready-to-run e escalável</h3>
+                        </div>
+                        <p class="mt-3 text-sm text-slate-200">Infraestrutura em Google Cloud com APIs e conectores preparados para integrar mesas de operação, ERPs e fluxos financeiros.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios" class="py-24 bg-white/5">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
+                    <div>
+                        <h2 class="font-display text-3xl sm:text-4xl text-white">Impacto direto na operação e na receita</h2>
+                        <p class="mt-4 text-lg text-slate-200">
+                            A StratFin foi desenhada para times financeiros, compliance e relacionamento trabalharem com o mesmo dado em tempo real e com trilhas completas de auditoria.
+                        </p>
+                    </div>
+                    <div class="rounded-full border border-white/15 px-6 py-3 text-sm text-slate-200">
+                        Operações conectadas, prontas para expansão regional e nacional.
+                    </div>
+                </div>
+                <div class="mt-16 grid gap-8 lg:grid-cols-3">
+                    <article class="rounded-3xl border border-white/10 bg-night/70 p-8">
+                        <div class="rounded-full bg-brand-500/20 p-3 w-fit">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M11.25 11.25l-2.122 2.122A3 3 0 104.5 17.75"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M14.25 12.75l2.122-2.122A3 3 0 1021 6.25"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M18 13v5m0 0l-2-2m2 2l2-2"/>
+                            </svg>
+                        </div>
+                        <h3 class="mt-6 text-xl font-semibold text-white">Visão 360° em tempo real</h3>
+                        <p class="mt-3 text-sm text-slate-200">Carga automática de indicadores econômicos oficiais e datasets cadastrais via APIs seguras. Atualizações diárias com validação e conciliação.</p>
+                    </article>
+                    <article class="rounded-3xl border border-white/10 bg-night/70 p-8">
+                        <div class="rounded-full bg-brand-500/20 p-3 w-fit">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="mt-6 text-xl font-semibold text-white">Governança e conformidade em primeiro lugar</h3>
+                        <p class="mt-3 text-sm text-slate-200">Workflows validados com equipes de compliance, com logs e trilhas completas para auditoria e reportes.</p>
+                    </article>
+                    <article class="rounded-3xl border border-white/10 bg-night/70 p-8">
+                        <div class="rounded-full bg-brand-500/20 p-3 w-fit">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="mt-6 text-xl font-semibold text-white">Visão única da jornada do investidor</h3>
+                        <p class="mt-3 text-sm text-slate-200">Oriente decisões com dashboards intuitivos, visão por advisor e indicadores de crescimento e retenção de carteiras.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="automacao" class="py-24">
+            <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-[0.9fr_1.1fr] gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -inset-10 bg-brand-500/10 blur-3xl rounded-full"></div>
+                    <div class="relative rounded-3xl border border-white/5 bg-white/5 p-10 backdrop-blur">
+                        <h2 class="font-display text-3xl sm:text-4xl text-white">Automação inteligente que já está em produção</h2>
+                        <p class="mt-4 text-lg text-slate-200">Jobs agendados e integrações prontas mantêm indicadores, cadastros e relatórios atualizados sem planilhas ou retrabalho.</p>
+                        <ul class="mt-8 space-y-4 text-sm text-slate-200">
+                            <li class="flex gap-3">
+                                <span class="mt-1 h-2.5 w-2.5 rounded-full bg-brand-400"></span>
+                                Atualizações diárias de IPCA, SELIC, PIB, IGPM, INPC, IBOVESPA e USD/BRL com histórico de 720 dias.
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="mt-1 h-2.5 w-2.5 rounded-full bg-brand-400"></span>
+                                Ingestão automatizada do cadastro público de agentes autônomos para apoiar compliance e segmentação.
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="mt-1 h-2.5 w-2.5 rounded-full bg-brand-400"></span>
+                                Convites por e-mail com reenvio programado, confirmação de ativação e histórico completo.
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="mt-1 h-2.5 w-2.5 rounded-full bg-brand-400"></span>
+                                Relatórios financeiros e de planejamento gerados em PDF ou CSV com templates configuráveis.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-6">
+                    <div class="rounded-3xl border border-white/10 bg-night/70 p-6">
+                        <p class="text-sm uppercase tracking-widest text-brand-200">Onboarding 360º</p>
+                        <p class="mt-3 text-base text-slate-100">Convites automatizados, checklists de documentação, aprovação de cadastros e registro histórico por advisor.</p>
+                    </div>
+                    <div class="rounded-3xl border border-white/10 bg-night/70 p-6">
+                        <p class="text-sm uppercase tracking-widest text-brand-200">Supervisão ativa</p>
+                        <p class="mt-3 text-base text-slate-100">Auditoria de acessos, trilhas de alteração e alertas de pendências operacionais.</p>
+                    </div>
+                    <div class="rounded-3xl border border-white/10 bg-night/70 p-6">
+                        <p class="text-sm uppercase tracking-widest text-brand-200">Gestor em tempo real</p>
+                        <p class="mt-3 text-base text-slate-100">Dashboards com KPIs de carteira, indicadores macro e performance por advisor e por mesa.</p>
+                    </div>
+                    <div class="rounded-3xl border border-white/10 bg-night/70 p-6">
+                        <p class="text-sm uppercase tracking-widest text-brand-200">APIs abertas</p>
+                        <p class="mt-3 text-base text-slate-100">APIs REST e webhooks para integrar CRMs, ERPs, plataformas de custódia e automações de marketing com segurança.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="seguranca" class="py-24 bg-white/5">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
+                    <div>
+                        <h2 class="font-display text-3xl sm:text-4xl text-white">Segurança, governança e compliance desde o dia zero</h2>
+                        <p class="mt-4 text-lg text-slate-200">Infraestrutura Google Cloud com arquitetura multi-tenant segura, criptografia ponta a ponta e aderência às certificações globais da plataforma.</p>
+                        <dl class="mt-8 grid gap-6 sm:grid-cols-2">
+                            <div class="rounded-2xl border border-white/10 bg-night/70 p-5">
+                                <dt class="text-sm uppercase text-brand-200 tracking-widest">LGPD-ready</dt>
+                                <dd class="mt-2 text-sm text-slate-200">Gestão completa de consentimentos, anonimização e políticas configuráveis.</dd>
+                            </div>
+                            <div class="rounded-2xl border border-white/10 bg-night/70 p-5">
+                                <dt class="text-sm uppercase text-brand-200 tracking-widest">Logs e trilhas</dt>
+                                <dd class="mt-2 text-sm text-slate-200">Auditoria detalhada de ações, integrações e alterações com retenção customizada.</dd>
+                            </div>
+                            <div class="rounded-2xl border border-white/10 bg-night/70 p-5">
+                                <dt class="text-sm uppercase text-brand-200 tracking-widest">Resiliência</dt>
+                                <dd class="mt-2 text-sm text-slate-200">Backup automático diário, redundância nativa da nuvem Google e MFA disponível via Firebase Auth.</dd>
+                            </div>
+                            <div class="rounded-2xl border border-white/10 bg-night/70 p-5">
+                                <dt class="text-sm uppercase text-brand-200 tracking-widest">Integrações seguras</dt>
+                                <dd class="mt-2 text-sm text-slate-200">APIs autenticadas, webhooks assinados e monitoramento contínuo de jobs e ingestões.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="rounded-3xl border border-white/10 bg-night/70 p-8">
+                            <h3 class="text-xl font-semibold text-white">Liderança com experiência no mercado financeiro</h3>
+                            <p class="mt-3 text-sm text-slate-200">Equipe formada por especialistas em compliance, open finance e automação de processos regulados. Entregamos suporte dedicado na jornada de implantação e expansão.</p>
+                        </div>
+                        <div class="rounded-3xl border border-white/10 bg-night/70 p-8">
+                            <h3 class="text-xl font-semibold text-white">Implantação orientada a resultados</h3>
+                            <p class="mt-3 text-sm text-slate-200">Assessment regulatório inicial, mapeamento de fluxos, treinamento hands-on e acompanhamento de performance definido em conjunto com o cliente.</p>
+                        </div>
+                        <a href="docs/Plataforma completa para empresas de agentes autônomos com automação inteligente.pdf" target="_blank" rel="noopener" class="flex items-center justify-between rounded-3xl border border-brand-500/30 bg-brand-500/10 px-8 py-6 transition hover:border-brand-400/60 hover:bg-brand-500/20">
+                            <div>
+                                <p class="text-sm uppercase tracking-[0.25em] text-brand-200">Material estratégico</p>
+                                <p class="mt-2 text-lg font-semibold text-white">Download: visão completa da plataforma</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m0 0l4-4m-4 4v6m-8-6l-4 4m4-4V4m8 12l-4 4" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24" id="cases">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10">
+                    <div>
+                        <h2 class="font-display text-3xl sm:text-4xl text-white">Experiência com operações reguladas</h2>
+                        <p class="mt-4 text-lg text-slate-200">Consolidamos aprendizados com escritórios independentes, mesas proprietárias e grupos de distribuição em processo constante de expansão e supervisão.</p>
+                    </div>
+                    <div class="rounded-full border border-white/10 bg-white/5 px-6 py-2 text-sm text-slate-200">Modelo white-label disponível</div>
+                </div>
+                <div class="mt-16 grid gap-6 lg:grid-cols-3">
+                    <div class="rounded-3xl border border-white/10 bg-night/70 p-8">
+                        <p class="text-sm text-slate-200">Mapeamento de fluxos críticos, integração com dados públicos e suporte especializado para adequar processos internos às exigências regulatórias.</p>
+                        <p class="mt-6 text-xs uppercase tracking-widest text-brand-200">Compliance e governança</p>
+                    </div>
+                    <div class="rounded-3xl border border-white/10 bg-night/70 p-8">
+                        <p class="text-sm text-slate-200">Playbooks comerciais, pipeline de oportunidades e distribuição por advisor para equipes distribuídas.</p>
+                        <p class="mt-6 text-xs uppercase tracking-widest text-brand-200">Relacionamento e vendas</p>
+                    </div>
+                    <div class="rounded-3xl border border-white/10 bg-night/70 p-8">
+                        <p class="text-sm text-slate-200">Conciliação e auditoria com dashboards em tempo real, sem depender de planilhas paralelas.</p>
+                        <p class="mt-6 text-xs uppercase tracking-widest text-brand-200">Operação e finanças</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-white/5" id="faq">
+            <div class="max-w-3xl mx-auto px-6 text-center">
+                <h2 class="font-display text-3xl sm:text-4xl text-white">Perguntas frequentes</h2>
+                <p class="mt-4 text-lg text-slate-200">Transparência total sobre a jornada de implantação e evolução da plataforma.</p>
+            </div>
+            <div class="mt-12 max-w-4xl mx-auto px-6 space-y-4">
+                <details class="group rounded-2xl border border-white/10 bg-night/70 p-6 transition">
+                    <summary class="flex cursor-pointer list-none items-center justify-between text-left text-base font-semibold text-white">
+                        Quanto tempo leva para colocar a StratFin em produção?
+                        <span class="ml-4 transition group-open:rotate-45">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="mt-4 text-sm text-slate-200">O cronograma é definido em conjunto com o time do cliente, considerando integrações, treinamento e migração de dados. Oferecemos um onboarding orientado às necessidades de empresas de agentes autônomos em expansão.</p>
+                </details>
+                <details class="group rounded-2xl border border-white/10 bg-night/70 p-6 transition">
+                    <summary class="flex cursor-pointer list-none items-center justify-between text-left text-base font-semibold text-white">
+                        A solução pode ser customizada?
+                        <span class="ml-4 transition group-open:rotate-45">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="mt-4 text-sm text-slate-200">Sim. Mantemos um core robusto com APIs abertas, permitindo extensões, white-label e integrações com sistemas legados e parceiros estratégicos.</p>
+                </details>
+                <details class="group rounded-2xl border border-white/10 bg-night/70 p-6 transition">
+                    <summary class="flex cursor-pointer list-none items-center justify-between text-left text-base font-semibold text-white">
+                        Como funciona a precificação?
+                        <span class="ml-4 transition group-open:rotate-45">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="mt-4 text-sm text-slate-200">Planos sob medida conforme número de agentes, volume de dados e módulos ativados. Incluímos suporte premium e evolução contínua da plataforma.</p>
+                </details>
+                <details class="group rounded-2xl border border-white/10 bg-night/70 p-6 transition">
+                    <summary class="flex cursor-pointer list-none items-center justify-between text-left text-base font-semibold text-white">
+                        Vocês oferecem suporte jurídico e regulatório?
+                        <span class="ml-4 transition group-open:rotate-45">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="mt-4 text-sm text-slate-200">Trabalhamos com especialistas parceiros e mantemos base de conhecimento atualizada com os principais marcos regulatórios para orientar a operação.</p>
+                </details>
+            </div>
+        </section>
+
+        <section id="contato" class="relative py-24">
+            <div class="absolute inset-0 bg-gradient-to-br from-brand-700/60 via-night to-night"></div>
+            <div class="relative max-w-6xl mx-auto px-6 grid lg:grid-cols-[1fr_1fr] gap-16 items-start">
+                <div class="space-y-6">
+                    <span class="inline-flex items-center gap-2 rounded-full border border-brand-400/40 bg-brand-500/10 px-4 py-1 text-sm text-brand-100">Captação de leads qualificados</span>
+                    <h2 class="font-display text-3xl sm:text-4xl text-white">Receba o blueprint completo e uma avaliação personalizada</h2>
+                    <p class="text-lg text-slate-200">Preencha os dados para receber o documento <em>“Plataforma completa para empresas de agentes autônomos com automação inteligente”</em> e agendar uma conversa com nossos especialistas.</p>
+                    <ul class="space-y-3 text-sm text-slate-200">
+                        <li class="flex gap-3">
+                            <span class="mt-1 h-2.5 w-2.5 rounded-full bg-brand-400"></span>
+                            Diagnóstico gratuito da maturidade operacional e regulatória.
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="mt-1 h-2.5 w-2.5 rounded-full bg-brand-400"></span>
+                            Plano de implantação detalhado com cronograma típico de 10 a 15 semanas.
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="mt-1 h-2.5 w-2.5 rounded-full bg-brand-400"></span>
+                            Acesso a demonstração interativa da plataforma.
+                        </li>
+                    </ul>
+                </div>
+                <form class="rounded-3xl border border-white/10 bg-night/80 p-8 shadow-2xl space-y-6" action="#" method="post" novalidate>
+                    <div>
+                        <label for="nome" class="block text-sm font-semibold text-white">Nome completo</label>
+                        <input id="nome" name="nome" type="text" required placeholder="Ex.: Ana Souza" class="mt-2 w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-slate-400 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500/40">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-semibold text-white">E-mail corporativo</label>
+                        <input id="email" name="email" type="email" required placeholder="Ex.: ana@seuescritorio.com.br" class="mt-2 w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-slate-400 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500/40">
+                    </div>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="telefone" class="block text-sm font-semibold text-white">Telefone / WhatsApp</label>
+                            <input id="telefone" name="telefone" type="tel" placeholder="Ex.: (11) 99999-0000" class="mt-2 w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-slate-400 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500/40">
+                        </div>
+                        <div>
+                            <label for="empresa" class="block text-sm font-semibold text-white">Empresa</label>
+                            <input id="empresa" name="empresa" type="text" required placeholder="Ex.: Mesa XPTO" class="mt-2 w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-slate-400 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500/40">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="agentes" class="block text-sm font-semibold text-white">Número de agentes autônomos</label>
+                        <select id="agentes" name="agentes" class="mt-2 w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500/40">
+                            <option value="" class="text-night">Selecione</option>
+                            <option value="1-10" class="text-night">1 - 10</option>
+                            <option value="11-30" class="text-night">11 - 30</option>
+                            <option value="31-60" class="text-night">31 - 60</option>
+                            <option value="61-120" class="text-night">61 - 120</option>
+                            <option value="120+" class="text-night">Mais de 120</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="objetivos" class="block text-sm font-semibold text-white">Objetivos prioritários</label>
+                        <textarea id="objetivos" name="objetivos" rows="4" placeholder="Conte-nos sobre os desafios do seu escritório" class="mt-2 w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-slate-400 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500/40"></textarea>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <input id="consentimento" name="consentimento" type="checkbox" required class="mt-1 h-4 w-4 rounded border-white/20 bg-white/10 text-brand-400 focus:ring-brand-400">
+                        <label for="consentimento" class="text-xs text-slate-300">Autorizo o contato da equipe StratFin e o envio de comunicações sobre a plataforma. Podemos revogar a qualquer momento.</label>
+                    </div>
+                    <button type="submit" class="w-full rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:bg-brand-400">
+                        Receber material e agendar conversa
+                    </button>
+                    <p class="text-xs text-slate-400 text-center">Em breve entraremos em contato com um diagnóstico inicial personalizado da sua operação.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-white/10 bg-night/80">
+        <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-sm text-slate-400">
+            <div class="flex items-center gap-3">
+                <img src="Logo completo sem fundo.png" alt="StratFin" class="h-24 w-auto drop-shadow-lg">
+                <div class="leading-tight">
+                    <p class="text-white font-semibold">StratFin</p>
+                    <p>Plataforma completa para empresas de agentes autônomos</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-6">
+                <a href="#hero" class="hover:text-brand-200 transition">Início</a>
+                <a href="#beneficios" class="hover:text-brand-200 transition">Benefícios</a>
+                <a href="#automacao" class="hover:text-brand-200 transition">Automação</a>
+                <a href="#faq" class="hover:text-brand-200 transition">FAQ</a>
+                <a href="docs/Plataforma completa para empresas de agentes autônomos com automação inteligente.pdf" target="_blank" rel="noopener" class="hover:text-brand-200 transition">Download do material</a>
+            </div>
+            <p>&copy; <span id="ano-atual"></span> StratFin. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</div>
+
+<script>
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
